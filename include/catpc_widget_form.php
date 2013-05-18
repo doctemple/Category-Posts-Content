@@ -90,30 +90,37 @@
     </select>
 </p>
 
-<p>
+<table width="100%">
+<tr>
+	<td><p>
   <input class="checkbox"  type="checkbox"
     <?php checked( (bool) $instance['show_date'], true ); ?>
     name="<?php echo $this->get_field_name( 'show_date' ); ?>" />
   <?php _e("วันที่", 'category-posts-content')?>
-</p>
-<p>
+</p></td>
+	<td><p>
   <input class="checkbox" input type="checkbox"
     <?php checked( (bool) $instance['show_author'], true ); ?>
     name="<?php echo $this->get_field_name( 'show_author' ); ?>" />
   <?php _e("ผู้เขียน", 'category-posts-content')?>
-</p>
-<p>
+</p></td>
+</tr>
+<tr>
+	<td><p>
   <input class="checkbox" input type="checkbox"
     <?php checked( (bool) $instance['show_catlink'], true ); ?>
     name="<?php echo $this->get_field_name( 'show_catlink' ); ?>" />
   <?php _e("ลิงค์หมวดหมู่", 'category-posts-content')?>
-</p>
-<p>
+</p></td>
+	<td><p>
   <input class="checkbox" input type="checkbox"
     <?php checked( (bool) $instance['show_excerpt'], true ); ?>
       name="<?php echo $this->get_field_name( 'show_excerpt' ); ?>" />
   <?php _e("เนื้อหาย่อ", 'category-posts-content')?>
-</p>
+</p></td>
+</tr>
+</table>
+
 <p>
   <label for="<?php echo $this->get_field_id('excerpt_size'); ?>">
     <?php _e("ขนาดเนื้อหาย่อ", 'category-posts-content')?>:
@@ -132,9 +139,9 @@
     name="<?php echo $this->get_field_name('morelink'); ?>" type="text"
     value="<?php echo esc_attr($morelink); ?>" />
 </p>
-<table>
+<table width="100%">
 <tr>
-  <td><p>
+	<td><p>
   <label for="<?php echo $this->get_field_id('limit'); ?>">
     <?php _e("จำนวนเรื่อง", 'category-posts-content')?>
   </label>
@@ -197,7 +204,7 @@
 
 <p>
   <label for="<?php echo $this->get_field_id('exclude'); ?>">
-    <?php _e("หมวดหมู่ ที่ไม่เอา (id's)", 'category-posts-content')?>
+    <?php _e("ไม่เอาหมวดหมู่ ID (id,id)", 'category-posts-content')?>
   </label>
   <br/>
   <input id="<?php echo $this->get_field_id('exclude'); ?>"
@@ -207,7 +214,7 @@
 
 <p>
   <label for="<?php echo $this->get_field_id('excludeposts'); ?>">
-    <?php _e("เรื่อง ที่ไม่เอา (id's)", 'category-posts-content')?>
+    <?php _e("ไม่เอาเรื่อง ID (id,id)", 'category-posts-content')?>
   </label>
   <br/>
   <input id="<?php echo $this->get_field_id('excludeposts'); ?>"
