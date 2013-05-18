@@ -132,8 +132,9 @@
     name="<?php echo $this->get_field_name('morelink'); ?>" type="text"
     value="<?php echo esc_attr($morelink); ?>" />
 </p>
-
-<p>
+<table>
+<tr>
+  <td><p>
   <label for="<?php echo $this->get_field_id('limit'); ?>">
     <?php _e("จำนวนเรื่อง", 'category-posts-content')?>
   </label>
@@ -141,18 +142,18 @@
   <input size="2" id="<?php echo $this->get_field_id('limit'); ?>"
     name="<?php echo $this->get_field_name('limit'); ?>" type="text"
     value="<?php echo esc_attr($limit); ?>" />
-</p>
-
-<p>
+</p></td>
+	<td><p>
   <label for="<?php echo $this->get_field_id('offset'); ?>">
-    <?php _e("Offset", 'category-posts-content')?>: <br/>
+    <?php _e("ออฟเซท", 'category-posts-content')?>: <br/>
       <input size="2" id="<?php echo $this->get_field_id('offset'); ?>"
         name="<?php echo $this->get_field_name('offset'); ?>" type="text"
         value="<?php echo esc_attr($offset); ?>" />
   </label>
-</p>
-
-<p>
+</p></td>
+</tr>
+<tr>
+	<td><p>
   <label for="<?php echo $this->get_field_id('orderby'); ?>">
     <?php _e("เรียงตาม", 'category-posts-content')?>
   </label> <br/>
@@ -174,9 +175,8 @@
       endforeach;
     ?>
   </select>
-</p>
-
-<p>
+</p></td>
+	<td><p>
   <label for="<?php echo $this->get_field_id('order'); ?>">
     <?php _e("รูปแบบการจัดเรียง", 'category-posts-content')?>
   </label>
@@ -190,7 +190,10 @@
       <?php _e("น้อยไปมาก", 'category-posts-content')?>
     </option>
   </select>
-</p>
+</p></td>
+</tr>
+
+</table>
 
 <p>
   <label for="<?php echo $this->get_field_id('exclude'); ?>">
