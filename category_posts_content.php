@@ -94,7 +94,7 @@ function catpc_meta($links, $file) {
       $links,
       array( sprintf('<a href="http://www.yensaby.com/Category-posts-content">%s</a>', __('การใช้งาน','category-posts-content')) ),
       array( sprintf('<a href="http://www.yensaby.com/Category-posts-content">%s</a>', __('สนับสนุน','category-posts-content')) ),
-      array( sprintf('<a href="http://www.yensaby.com/Category-posts-content">%s</a>', __('การพัฒนา','category-posts-content')) )
+      array( sprintf('<a href="https://github.com/yensaby/Category-Posts-Content">%s</a>', __('การพัฒนา','category-posts-content')) )
     );
   endif;
 
